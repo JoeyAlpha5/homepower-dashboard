@@ -1,0 +1,28 @@
+
+<h5 mat-dialog-title>Units</h5>
+<mat-dialog-content class="mat-typography">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Meter Number</th>
+            <th scope="col">Device Number</th>
+            <th scope="col">Power Status</th>
+            <th scope="col">Toggle Power</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let res of units">
+            <th scope="row">{{ res.unum }}</th>
+            <td>{{ res.cell }}</td>
+
+            <td *ngIf="res.status == false">off</td>
+            <td *ngIf="res.status == true">On</td>
+
+            <td *ngIf="res.status == false"><mat-slide-toggle (change)="toggle($event, res.cell)">Turn power on!</mat-slide-toggle>
+            </td>
+            <td *ngIf="res.status == true"><mat-slide-toggle (change)="toggle($event, res.cell)" checked="true">Turn power off!</mat-slide-toggle>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</mat-dialog-content>

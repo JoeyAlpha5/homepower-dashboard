@@ -1,0 +1,39 @@
+.row {
+  height: 100%;
+  position: absolute;
+  width: 16.666667%
+}
+
+a {
+  color: #343a40b8 !important
+}
+
+#leftPane {
+  background: #000000;
+  padding: 0;
+  max-width: 16%;
+  position: fixed;
+}
+
+nav.col-md-2.d-none.d-md-block.bg-light.sidebar {
+  max-width: 100%
+}
+
+li.nav-item {
+  height: 62px
+}
+
+.col-sm-2 {
+  flex: unset !important
+}
+
+.bg-light {
+    background-color: #000000!important;
+}
+
+
+@media(min-width:1000px){
+    #leftPane{
+        height: 100%;
+    }
+}

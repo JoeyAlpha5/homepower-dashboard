@@ -1,0 +1,22 @@
+<app-pane></app-pane>
+<div class="container driverContainer">
+    <h5>Residentials</h5>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">House Number & Stand Number</th>
+            <th scope="col">House Address</th>
+            <th scope="col">Town Name</th>
+            <th scope="col">View Units</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let res of residence">
+            <th scope="row">{{ res.house_number }}</th>
+            <td>{{ res.name }}</td>
+            <td>{{ res.town }}</td>
+            <td><span (click)="unit(res.id)">View Units <i class="fas fa-external-link-alt"></i></span></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
