@@ -4,10 +4,10 @@
     <table class="table">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">House Number & Stand Number</th>
+            <th scope="col">House or Stand Number</th>
             <th scope="col">House Address</th>
             <th scope="col">Town Name</th>
-            <th scope="col">View Units</th>
+            <th scope="col">Select Unit</th>
           </tr>
         </thead>
         <tbody>
@@ -15,7 +15,7 @@
             <th scope="row">{{ res.house_number }}</th>
             <td>{{ res.name }}</td>
             <td>{{ res.town }}</td>
-            <td><span (click)="unit(res.id)">View Units <i class="fas fa-external-link-alt"></i></span></td>
+            <td><span (click)="unit(res.id)">Select Unit <i class="fas fa-external-link-alt"></i></span></td>
           </tr>
         </tbody>
       </table>

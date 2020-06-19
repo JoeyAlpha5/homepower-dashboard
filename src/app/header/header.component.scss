@@ -3,8 +3,20 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 99;
-    span{
-        margin-left: 15px;
+    p{
+        float: left;
         color: white;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    img{
+        float: left;
+    }
+}
+
+@media (max-width:800px){
+    p{
+        font-size: 12px;
     }
 }

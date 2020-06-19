@@ -10,7 +10,9 @@
 .card{
     width: 400px;
     padding: 20px;
-    box-shadow: 1px 6px 10px 0 rgba(0,0,0,.16), 1px 6px 10px 0 rgba(0,0,0,.12);
+    border: 0px;
+    margin-top: 100px;
+    // box-shadow: 1px 6px 10px 0 rgba(0,0,0,.16), 1px 6px 10px 0 rgba(0,0,0,.12);
 
 }
 
@@ -45,4 +47,10 @@ p#loginErr, #loginSuccess {
 
 .btn-primary.focus, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:800px){
+    .loginContent{
+        margin-top: 20px;
+    }
 }
